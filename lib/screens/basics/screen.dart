@@ -1,4 +1,9 @@
+import 'package:ffb_tutorial/screens/basics/creating_a_form/screen.dart';
 import 'package:ffb_tutorial/screens/basics/formbuilder/screen.dart';
+import 'package:ffb_tutorial/screens/basics/reading_field_data/screen.dart';
+import 'package:ffb_tutorial/screens/basics/reading_form_data/screen.dart';
+import 'package:ffb_tutorial/screens/basics/reset_form/screen.dart';
+import 'package:ffb_tutorial/screens/basics/validate_form_input/screen.dart';
 import 'package:flutter/material.dart';
 
 class BasicsScreen extends StatefulWidget {
@@ -15,34 +20,19 @@ class _BasicsScreenState extends State<BasicsScreen> {
         return FormBuilderScreen();
         break;
       case 1:
-        return Center(
-          child: Text('$_currentIndex'),
-        );
+        return CreatingAFormScreen();
         break;
       case 2:
-        return Center(
-          child: Text('$_currentIndex'),
-        );
+        return ResetFormScreen();
         break;
       case 3:
-        return Center(
-          child: Text('$_currentIndex'),
-        );
+        return ReadingFieldDataScreen();
         break;
       case 4:
-        return Center(
-          child: Text('$_currentIndex'),
-        );
+        return ReadingFormDataScreen();
         break;
       case 5:
-        return Center(
-          child: Text('$_currentIndex'),
-        );
-        break;
-      case 6:
-        return Center(
-          child: Text('$_currentIndex'),
-        );
+        return ValidateFormInputScreen();
         break;
       default:
         return Container();
@@ -66,7 +56,7 @@ class _BasicsScreenState extends State<BasicsScreen> {
             NavigationRailDestination(
               icon: Icon(Icons.widgets),
               selectedIcon: Icon(Icons.widgets),
-              label: Text('FormBuilder-Widget'),
+              label: Text('FormBuilder Basics'),
             ),
             NavigationRailDestination(
               icon: Icon(Icons.list_alt),
@@ -81,17 +71,12 @@ class _BasicsScreenState extends State<BasicsScreen> {
             NavigationRailDestination(
               icon: Icon(Icons.remove_red_eye_outlined),
               selectedIcon: Icon(Icons.remove_red_eye_outlined),
-              label: Text('Reading field data'),
+              label: Text('Read fields'),
             ),
             NavigationRailDestination(
               icon: Icon(Icons.remove_red_eye),
               selectedIcon: Icon(Icons.remove_red_eye),
-              label: Text('Reading form data'),
-            ),
-            NavigationRailDestination(
-              icon: Icon(Icons.save),
-              selectedIcon: Icon(Icons.save),
-              label: Text('Save form input'),
+              label: Text('Save & read form'),
             ),
             NavigationRailDestination(
               icon: Icon(Icons.check),

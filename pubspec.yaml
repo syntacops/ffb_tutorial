@@ -23,14 +23,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
   expansion_card: ^0.1.0
+  getwidget: ^1.1.0
+  flutter_form_builder: ^4.2.0
+  device_preview: ^0.5.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  integration_test:
-    sdk: flutter
+#  integration_test:
+#    sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -42,9 +44,14 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/images/creating_a_form/step1.png
+    - assets/images/creating_a_form/step2.png
+    - assets/images/reset_form/
+    - assets/images/reading_field_data/
+    - assets/images/reading_form_data/
+    - assets/images/validate_form_input/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

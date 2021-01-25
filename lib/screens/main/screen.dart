@@ -27,6 +27,7 @@ class _MainScreenState extends State<MainScreen> {
         elevation: 0,
         backgroundColor: Colors.black54,
       ),
+      resizeToAvoidBottomInset: false,
       body: Row(
         children: <Widget>[
           NavigationRail(
