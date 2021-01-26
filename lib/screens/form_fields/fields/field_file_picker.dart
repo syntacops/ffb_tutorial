@@ -6,7 +6,7 @@ import 'package:form_builder_file_picker/form_builder_file_picker.dart';
 final exampleFilePicker = FormBuilderFilePicker(
   name: 'file_picker',
   decoration: InputDecoration(labelText: "Attachments"),
-  maxFiles: null,
+  maxFiles: 1,
   previewImages: true,
   onChanged: (val) => print(val),
   selector: Row(
@@ -19,5 +19,3 @@ final exampleFilePicker = FormBuilderFilePicker(
     print(val);
   },
 );
-
-//TODO: Complete this

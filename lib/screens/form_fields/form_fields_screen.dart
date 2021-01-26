@@ -4,7 +4,7 @@ import 'package:ffb_tutorial/screens/form_fields/fields/field_chips_input.dart';
 import 'package:ffb_tutorial/screens/form_fields/fields/field_choice_chip.dart';
 import 'package:ffb_tutorial/screens/form_fields/fields/field_daterange_picker.dart';
 import 'package:ffb_tutorial/screens/form_fields/fields/field_dropdown.dart';
-import 'package:ffb_tutorial/screens/form_fields/fields/field_filepicker.dart';
+import 'package:ffb_tutorial/screens/form_fields/fields/field_file_picker.dart';
 import 'package:ffb_tutorial/screens/form_fields/fields/field_filter_chip.dart';
 import 'package:ffb_tutorial/screens/form_fields/fields/field_image_picker.dart';
 import 'package:ffb_tutorial/screens/form_fields/fields/field_location_field.dart';
@@ -111,7 +111,7 @@ class _FormFieldsScreenState extends State<FormFieldsScreen> {
         break;
       case 22:
         return SharedForm(
-            title: 'LocationField', formField: exampleLocationField);
+            title: 'LocationField', formField: exampleLocationFieldContents);
         break;
       case 23:
         return SharedForm(title: 'PhoneField', formField: examplePhoneField);
