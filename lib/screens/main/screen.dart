@@ -1,6 +1,8 @@
 import 'package:ffb_tutorial/screens/basics/screen.dart';
 import 'package:ffb_tutorial/screens/core_attributes/screen.dart';
 import 'package:ffb_tutorial/screens/form_fields/form_fields_screen.dart';
+import 'package:ffb_tutorial/screens/validation/validation_screen.dart';
+import 'package:ffb_tutorial/screens/validation/validators_demo_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -21,6 +23,9 @@ class _MainScreenState extends State<MainScreen> {
         break;
       case 2:
         return FormFieldsScreen();
+        break;
+      case 3:
+        return ValidationScreen();
         break;
       default:
         return Container();
@@ -69,7 +74,7 @@ class _MainScreenState extends State<MainScreen> {
               NavigationRailDestination(
                 icon: Icon(Icons.check_box),
                 selectedIcon: Icon(Icons.check_box),
-                label: Text('Validators'),
+                label: Text('Validation'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.more),
