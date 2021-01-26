@@ -26,7 +26,13 @@ dependencies:
   expansion_card: ^0.1.0
   getwidget: ^1.1.0
   flutter_form_builder: ^4.2.0
+  intl: ^0.16.1
   device_preview: ^0.5.5
+  # Additional form fields
+  form_builder_file_picker: ^1.0.0
+  form_builder_image_picker: ^0.1.2
+  form_builder_map_field: ^1.0.0-alpha.1
+  form_builder_phone_field: ^0.1.0
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +58,7 @@ flutter:
     - assets/images/reading_field_data/
     - assets/images/reading_form_data/
     - assets/images/validate_form_input/
+    - assets/images/core_attributes/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

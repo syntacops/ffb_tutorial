@@ -1,4 +1,6 @@
 import 'package:ffb_tutorial/screens/basics/screen.dart';
+import 'package:ffb_tutorial/screens/core_attributes/screen.dart';
+import 'package:ffb_tutorial/screens/form_fields/form_fields_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -13,6 +15,12 @@ class _MainScreenState extends State<MainScreen> {
     switch (_currentIndex) {
       case 0:
         return BasicsScreen();
+        break;
+      case 1:
+        return CoreAttributesScreen();
+        break;
+      case 2:
+        return FormFieldsScreen();
         break;
       default:
         return Container();
