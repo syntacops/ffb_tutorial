@@ -2,6 +2,7 @@ import 'package:ffb_tutorial/screens/validation/validators/validator_email.dart'
 import 'package:ffb_tutorial/screens/validation/validators/validator_equal.dart';
 import 'package:ffb_tutorial/screens/validation/validators/validator_integer.dart';
 import 'package:ffb_tutorial/screens/validation/validators/validator_max_length.dart';
+import 'package:ffb_tutorial/screens/validation/validators/validator_min_length.dart';
 import 'package:ffb_tutorial/screens/validation/validators/validator_numeric.dart';
 import 'package:ffb_tutorial/screens/validation/validators/validator_required.dart';
 import 'package:ffb_tutorial/screens/validation/validators/validator_url.dart';
@@ -93,15 +94,20 @@ class _FormFieldsScreenState extends State<ValidatorsDemoScreen> {
         break;
       case 11:
         return ValidatorsSharedForm(
+            title: 'minLength -> minLength is 3',
+            validator: buildValidatorMinLength(context));
+        break;
+      case 12:
+        return ValidatorsSharedForm(
             title: 'numeric -> value has to be numeric',
             validator: buildValidatorNumeric(context));
         break;
-      case 12:
+      case 13:
         return ValidatorsSharedForm(
             title: 'required -> field is required',
             validator: buildValidatorRequired(context));
         break;
-      case 13:
+      case 14:
         return ValidatorsSharedForm(
             title: 'URL -> value has to be a URL',
             validator: buildValidatorURL(context));

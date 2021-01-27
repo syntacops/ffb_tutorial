@@ -1,3 +1,6 @@
+import 'package:ffb_tutorial/screens/validation/conditional_validation_screen.dart';
+import 'package:ffb_tutorial/screens/validation/custom_errors_screen.dart';
+import 'package:ffb_tutorial/screens/validation/multiple_validators_screen.dart';
 import 'package:ffb_tutorial/screens/validation/validators_demo_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,13 +18,13 @@ class _ValidationScreenState extends State<ValidationScreen> {
         return ValidatorsDemoScreen();
         break;
       case 1:
-        return Center(child: Text('$_currentIndex'));
+        return MultipleValidatorsFormScreen();
         break;
       case 2:
-        return Center(child: Text('$_currentIndex'));
+        return ConditionalValidationFormScreen();
         break;
       case 3:
-        return Center(child: Text('$_currentIndex'));
+        return CustomErrorsFormScreen();
         break;
       default:
         return Container();
@@ -60,7 +63,7 @@ class _ValidationScreenState extends State<ValidationScreen> {
             NavigationRailDestination(
               icon: Icon(Icons.remove_red_eye_outlined),
               selectedIcon: Icon(Icons.remove_red_eye_outlined),
-              label: Text('Advanced validation & errors'),
+              label: Text('Custom errors'),
             ),
           ],
         ),
