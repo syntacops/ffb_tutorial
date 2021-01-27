@@ -1,7 +1,7 @@
 import 'package:ffb_tutorial/screens/basics/screen.dart';
 import 'package:ffb_tutorial/screens/core_attributes/screen.dart';
-import 'package:ffb_tutorial/screens/form_fields/built_in_form_fields_screen.dart';
 import 'package:ffb_tutorial/screens/form_fields/form_fields_screen.dart';
+import 'package:ffb_tutorial/screens/internationalization/internationalization_form_screen.dart';
 import 'package:ffb_tutorial/screens/validation/validation_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +26,9 @@ class _MainScreenState extends State<MainScreen> {
         break;
       case 3:
         return ValidationScreen();
+        break;
+      case 4:
+        return InternationalizationFormScreen();
         break;
       default:
         return Container();
@@ -79,7 +82,7 @@ class _MainScreenState extends State<MainScreen> {
               NavigationRailDestination(
                 icon: Icon(Icons.more),
                 selectedIcon: Icon(Icons.more),
-                label: Text('Miscellaneous'),
+                label: Text('Internationalization'),
               ),
             ],
           ),
