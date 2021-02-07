@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:form_builder_file_picker/form_builder_file_picker.dart';
 
+// Creates field for image(s) from user device storage
+
 // https://github.com/miguelpruivo/flutter_file_picker/wiki/Setup
 
 final exampleFilePicker = FormBuilderFilePicker(

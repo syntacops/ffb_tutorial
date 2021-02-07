@@ -16,43 +16,46 @@ class ResetFormScreen extends StatelessWidget {
         key: _formKey,
         child: Padding(
           padding: const EdgeInsets.all(32.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              GFTypography(
-                type: GFTypographyType.typo1,
-                text: 'Example form',
-              ),
-              SizedBox(height: 20),
-              FormBuilderTextField(
-                name: 'textfield',
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: const BorderRadius.all(
-                        const Radius.circular(10.0),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                GFTypography(
+                  type: GFTypographyType.typo1,
+                  text: 'Example form',
+                ),
+                SizedBox(height: 20),
+                FormBuilderTextField(
+                  name: 'textfield',
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(10.0),
+                        ),
                       ),
-                    ),
-                    filled: true,
-                    hintStyle: TextStyle(color: Colors.grey[800]),
-                    hintText: "Type in your text",
-                    fillColor: Colors.white70),
-              ),
-              SizedBox(height: 20),
-              RaisedButton(
-                onPressed: () {
-                  // Reset form
-                  _formKey.currentState.reset();
+                      filled: true,
+                      hintStyle: TextStyle(color: Colors.grey[800]),
+                      hintText: "Type in your text",
+                      fillColor: Colors.white70),
+                ),
+                SizedBox(height: 20),
+                RaisedButton(
+                  onPressed: () {
+                    // Reset form
+                    _formKey.currentState.reset();
 
-                  // Optional: unfocus keyboard
-                  FocusScope.of(context).unfocus();
-                },
-                child: Text('Reset'),
-              ),
-              SizedBox(height: 20),
-              Image(
-                  height: 200,
-                  image: AssetImage('assets/images/reset_form/reset_form.png'))
-            ],
+                    // Optional: unfocus keyboard
+                    FocusScope.of(context).unfocus();
+                  },
+                  child: Text('Reset'),
+                ),
+                SizedBox(height: 20),
+                Image(
+                    height: 200,
+                    image:
+                        AssetImage('assets/images/reset_form/reset_form.png'))
+              ],
+            ),
           ),
         ),
       ),

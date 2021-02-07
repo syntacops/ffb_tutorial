@@ -10,7 +10,7 @@ class AttributeEnabledScreen extends StatefulWidget {
 class _AttributeEnabledScreenState extends State<AttributeEnabledScreen> {
   final _formKey = GlobalKey<FormBuilderState>();
 
-  bool _checkboxEnabled = true;
+  bool _checkboxEnabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -50,9 +50,11 @@ class _AttributeEnabledScreenState extends State<AttributeEnabledScreen> {
               SizedBox(height: 20),
               RaisedButton(
                 onPressed: () {
+                  // Save it
+                  _formKey.currentState.save();
+
                   // Get textfield input value
-                  final textfieldData =
-                      _formKey.currentState.fields['textfield'].value;
+                  final textfieldData = _formKey.currentState.value;
 
                   // Optional: unfocus keyboard
                   FocusScope.of(context).unfocus();
@@ -70,7 +72,7 @@ class _AttributeEnabledScreenState extends State<AttributeEnabledScreen> {
               SizedBox(height: 20),
               FormBuilderCheckbox(
                   name: 'checkbox',
-                  initialValue: false,
+                  initialValue: _checkboxEnabled,
                   onChanged: (val) {
                     setState(() {
                       _checkboxEnabled = val;

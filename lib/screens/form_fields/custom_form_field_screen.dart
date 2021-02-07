@@ -31,9 +31,6 @@ class _CustomFormFieldScreenState extends State<CustomFormFieldScreen> {
                     children: [
                       FormBuilderField(
                         name: "myfield",
-                        validator: FormBuilderValidators.compose([
-                          FormBuilderValidators.required(context),
-                        ]),
                         builder: (FormFieldState<dynamic> field) {
                           return InputDecorator(
                             decoration: InputDecoration(
@@ -87,7 +84,7 @@ class _CustomFormFieldScreenState extends State<CustomFormFieldScreen> {
                         child: Text('Submit'),
                       ),
                       SizedBox(height: 20),
-                      Image(
+/*                       Image(
                         height: 150,
                         image: AssetImage(
                             'assets/images/custom_field/custom_field1.png'),
@@ -96,7 +93,7 @@ class _CustomFormFieldScreenState extends State<CustomFormFieldScreen> {
                         height: 600,
                         image: AssetImage(
                             'assets/images/custom_field/custom_field2.png'),
-                      )
+                      ) */
                     ],
                   ),
                 ))

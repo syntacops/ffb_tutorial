@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:intl/intl.dart';
 
+// Creates field for selecting a range of dates
+
 final ValueChanged _onChanged = (val) => print(val);
 
 final exampleDateRangePicker = FormBuilderDateRangePicker(

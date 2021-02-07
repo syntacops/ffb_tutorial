@@ -74,11 +74,11 @@ class AttributeValidatorScreen extends StatelessWidget {
                 child: Text('Read'),
               ),
               SizedBox(height: 20),
-              Image(
-                height: 400,
-                image:
-                    AssetImage('assets/images/core_attributes/validator.png'),
-              )
+              // Image(
+              //   height: 400,
+              //   image:
+              //       AssetImage('assets/images/core_attributes/validator.png'),
+              // )
             ],
           ),
         ),

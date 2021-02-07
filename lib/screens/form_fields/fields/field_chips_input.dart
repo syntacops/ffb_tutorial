@@ -2,6 +2,9 @@ import 'package:ffb_tutorial/core/data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
+// A field that takes a list of `Chip`s as
+// input and suggests more option
+
 final ValueChanged _onChanged = (val) => print(val);
 
 final exampleChipsInput = FormBuilderChipsInput(

@@ -35,47 +35,43 @@ class _ChangingFieldValuesFormScreenState
                       SizedBox(height: 20),
                       RaisedButton(
                         onPressed: () {
-                          // _formKey.currentState.fields['textfield1']
-                          //     .didChange('NOPE!');
+                          _formKey.currentState.fields['textfield1']
+                              .didChange('changed!!!');
 
-                          _formKey.currentState.patchValue({
-                            'textfield1': 'HELLO',
-                            'textfield2': 'WORLD',
-                          });
-
-                          // if (_formKey.currentState.saveAndValidate()) {
-                          //   final formData = _formKey.currentState.value;
-                          //   Scaffold.of(context).showSnackBar(
-                          //     SnackBar(
-                          //       duration: Duration(seconds: 10),
-                          //       content: Row(
-                          //         children: [
-                          //           Expanded(
-                          //             child: Text('$formData',
-                          //                 textScaleFactor: 1.5),
-                          //           ),
-                          //           RaisedButton.icon(
-                          //             onPressed: () {
-                          //               Scaffold.of(context)
-                          //                   .hideCurrentSnackBar();
-                          //             },
-                          //             icon: Icon(Icons.close),
-                          //             label: Text('Close'),
-                          //           )
-                          //         ],
-                          //       ),
-                          //     ),
-                          //   );
-                          // }
+                          //
+                          if (_formKey.currentState.saveAndValidate()) {
+                            final formData = _formKey.currentState.value;
+                            Scaffold.of(context).showSnackBar(
+                              SnackBar(
+                                duration: Duration(seconds: 10),
+                                content: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text('$formData',
+                                          textScaleFactor: 1.5),
+                                    ),
+                                    RaisedButton.icon(
+                                      onPressed: () {
+                                        Scaffold.of(context)
+                                            .hideCurrentSnackBar();
+                                      },
+                                      icon: Icon(Icons.close),
+                                      label: Text('Close'),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
+                          }
                         },
                         child: Text('Submit'),
                       ),
                       SizedBox(height: 20),
-                      Image(
-                        height: 300,
-                        image: AssetImage(
-                            'assets/images/custom_field/change_field_value.png'),
-                      )
+                      // Image(
+                      //   height: 300,
+                      //   image: AssetImage(
+                      //       'assets/images/custom_field/change_field_value.png'),
+                      // )
                     ],
                   ),
                 ))

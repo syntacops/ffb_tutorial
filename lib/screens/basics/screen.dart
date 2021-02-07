@@ -20,18 +20,15 @@ class _BasicsScreenState extends State<BasicsScreen> {
         return FormBuilderScreen();
         break;
       case 1:
-        return CreatingAFormScreen();
-        break;
-      case 2:
         return ResetFormScreen();
         break;
-      case 3:
+      case 2:
         return ReadingFieldDataScreen();
         break;
-      case 4:
+      case 3:
         return ReadingFormDataScreen();
         break;
-      case 5:
+      case 4:
         return ValidateFormInputScreen();
         break;
       default:
@@ -57,11 +54,6 @@ class _BasicsScreenState extends State<BasicsScreen> {
               icon: Icon(Icons.widgets),
               selectedIcon: Icon(Icons.widgets),
               label: Text('FormBuilder Basics'),
-            ),
-            NavigationRailDestination(
-              icon: Icon(Icons.list_alt),
-              selectedIcon: Icon(Icons.list_alt),
-              label: Text('Creating a form'),
             ),
             NavigationRailDestination(
               icon: Icon(Icons.restore),

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
+// Creates field for selection of a
+// value from the CupertinoSegmentedControl
+
 final exampleSegmentedControl = FormBuilderSegmentedControl(
   name: 'segmented_control',
   options: [

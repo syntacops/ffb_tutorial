@@ -5,5 +5,3 @@ final exampleSearchableDropdown = FormBuilderSearchableDropdown(
   name: 'searchable_dropdown',
   items: allCountries,
 );
-
-//TODO: Fix this (error on dropdown selection)

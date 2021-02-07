@@ -1,3 +1,7 @@
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
-final exampleTextfield = FormBuilderTextField(name: 'textfield');
+// Creates a Material Design text field input.
+
+final exampleTextfield = FormBuilderTextField(
+  name: 'textfield',
+);

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
+// A list of `Chip`s that acts like radio buttons
+
 final exampleChoiceChip = FormBuilderChoiceChip(
   name: 'choice_chip',
   decoration: InputDecoration(

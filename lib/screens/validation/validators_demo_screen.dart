@@ -15,6 +15,7 @@ import 'validators/validator_ip.dart';
 import 'validators/validator_match.dart';
 import 'validators/validator_max.dart';
 import 'validators/validator_min.dart';
+import 'validators/validators_not_equal.dart';
 
 class ValidatorsDemoScreen extends StatefulWidget {
   @override
@@ -51,7 +52,7 @@ class _FormFieldsScreenState extends State<ValidatorsDemoScreen> {
       case 4:
         return ValidatorsSharedForm(
           title: 'notEqual -> YES',
-          validator: buildValidatorEqual(context),
+          validator: buildValidatorNotEqual(context),
         );
         break;
       case 5:
