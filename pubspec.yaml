@@ -35,7 +35,10 @@ dependencies:
   form_builder_image_picker: ^0.1.2
   form_builder_map_field: ^1.0.0-alpha.1
   form_builder_phone_field: ^0.1.0
-
+dependency_overrides:
+  intl: ^0.17.0
+  date_range_picker: ^1.0.7
+  country_pickers: ^2.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
